@@ -14,7 +14,7 @@ import SwiftUI
  ViewModel =
  */
 @main
-struct ToDoListApp: App {
+ struct ToDoListApp: App {
     
     @StateObject var listViewModel: ListViewModel = ListViewModel()
     
