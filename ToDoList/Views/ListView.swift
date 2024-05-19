@@ -13,20 +13,29 @@ struct ListView: View {
    
     
     var body: some View {
-        List{
-            ForEach(listViewModel.items) { item in
-                ListRowView(item: item)
-                //tapped the list item and changed the look
-                    .onTapGesture {
-                        withAnimation(.linear) {
-                            listViewModel.updateItem(item: item)
-                        }
+        
+        ZStack {
+            if listViewModel.items.isEmpty {
+                NoItems()
+                    .transition(AnyTransition.opacity
+                        .animation(.easeIn))
+            } else {
+                List{
+                    ForEach(listViewModel.items) { item in
+                        ListRowView(item: item)
+                        //tapped the list item and changed the look
+                            .onTapGesture {
+                                withAnimation(.linear) {
+                                    listViewModel.updateItem(item: item)
+                                }
+                            }
                     }
+                    .onDelete(perform: listViewModel.deleteItem)
+                    .onMove(perform: listViewModel.moveItem)
+                }
+                .listStyle(PlainListStyle())
             }
-            .onDelete(perform: listViewModel.deleteItem)
-            .onMove(perform: listViewModel.moveItem)
         }
-        .listStyle(PlainListStyle())
         .navigationTitle("ToDo Lsit📝")
         .navigationBarItems(
             leading: EditButton(),

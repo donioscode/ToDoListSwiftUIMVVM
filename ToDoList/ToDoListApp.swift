@@ -23,6 +23,7 @@ import SwiftUI
             NavigationView {
             ListView()
             }
+            .navigationViewStyle(StackNavigationViewStyle() )
             .environmentObject(listViewModel)
         }
     }

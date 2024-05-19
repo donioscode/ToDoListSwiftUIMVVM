@@ -15,6 +15,8 @@
 		913547E92BF7878F009830BC /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913547E82BF7878F009830BC /* AddView.swift */; };
 		913547EC2BF8EF8F009830BC /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913547EB2BF8EF8F009830BC /* ItemModel.swift */; };
 		913547EF2BF8FB65009830BC /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913547EE2BF8FB65009830BC /* ListViewModel.swift */; };
+		914BC1022BF9C86D002A4761 /* NoItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BC1012BF9C86D002A4761 /* NoItems.swift */; };
+		914BC1042BF9DD47002A4761 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 914BC1032BF9DD47002A4761 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		913547E82BF7878F009830BC /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		913547EB2BF8EF8F009830BC /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		913547EE2BF8FB65009830BC /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		914BC1012BF9C86D002A4761 /* NoItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItems.swift; sourceTree = "<group>"; };
+		914BC1032BF9DD47002A4761 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				913547E42BF7800D009830BC /* ListView.swift */,
+				914BC1032BF9DD47002A4761 /* LaunchScreen.storyboard */,
+				914BC1012BF9C86D002A4761 /* NoItems.swift */,
 				913547E62BF7845E009830BC /* ListRowView.swift */,
 				913547E82BF7878F009830BC /* AddView.swift */,
 			);
@@ -161,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				914BC1042BF9DD47002A4761 /* LaunchScreen.storyboard in Resources */,
 				913547DC2BF77FC9009830BC /* Preview Assets.xcassets in Resources */,
 				913547D92BF77FC9009830BC /* Assets.xcassets in Resources */,
 			);
@@ -175,6 +182,7 @@
 			files = (
 				913547EC2BF8EF8F009830BC /* ItemModel.swift in Sources */,
 				913547E92BF7878F009830BC /* AddView.swift in Sources */,
+				914BC1022BF9C86D002A4761 /* NoItems.swift in Sources */,
 				913547EF2BF8FB65009830BC /* ListViewModel.swift in Sources */,
 				913547D52BF77FC8009830BC /* ToDoListApp.swift in Sources */,
 				913547E52BF7800D009830BC /* ListView.swift in Sources */,
@@ -315,9 +323,11 @@
 				DEVELOPMENT_TEAM = ZS2V7YJL4L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Do Stuff";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -327,6 +337,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = doniyornormuxammedov.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -344,9 +358,11 @@
 				DEVELOPMENT_TEAM = ZS2V7YJL4L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Do Stuff";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,6 +372,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = doniyornormuxammedov.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
